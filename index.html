@@ -1,49 +1,290 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neurosymbolic AI for EGI: Explainable, Grounded, and Instructable Generations">
     <title>Neurosymbolic AI for EGI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 2rem;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 2rem 10%;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+
+        section h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        section p, ul {
+            margin-top: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .abstract-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .abstract-content img {
+            float: right;
+            width: 20%;
+            max-width: 300px;
+            height: auto;
+            margin: 0 0 1rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .abstract-content div {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+
+        .team-member div {
+            flex: 1;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 2rem 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Neurosymbolic AI for EGI</h1>
+        <h1>Tutorial: Neurosymbolic AI for EGI</h1>
         <p>Explainable, Grounded, and Instructable Generations</p>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#topics">Topics</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#schedule">Tutorial Schedules</a>
+        <a href="#team">Tutorial Organizer Bios</a>
+        <a href="#audience">Tutorial Audience</a>
+        <a href="#slides">Slides</a>
+        <a href="#references">References</a>
     </nav>
 
     <div class="container">
-        <section id="about">
-            <h2>About the Tutorial</h2>
-            <p>Content coming soon...</p>
+        <section id="abstract">
+            <h2>Tutorial Abstract</h2>
+            <div class="abstract-content">
+                <div>
+                    <img src="abstract.png" alt="Abstract Image">
+                    <p>Large Language Models (LLMs) are transforming Natural Language Processing tasks across multiple domains. Despite their capabilities, their real-world adoption is often limited by issues like the lack of transparency, inadequate understanding of domain protocols, and subpar precision. This tutorial introduces the concept of Neurosymbolic AI, which combines symbolic knowledge structures with statistical learning techniques to build more robust, explainable, and instructable LLMs. This tutorial aims to empower participants to deeply understand Neurosymbolic AI applied to Large Language Models (LLMs), addressing key challenges like explainability, grounding, and instructability (EGI).</p>
+                    <p><strong>Specific learning outcomes:</strong></p>
+                    <ul>
+                        <li><strong>Understand limitations:</strong> Grasp the challenges of traditional black-box LLMs and the importance of EGI.</li>
+                        <li><strong>Design LLMs:</strong> Learn to create models that integrate process knowledge for better instructability.</li>
+                        <li><strong>Enhance grounding:</strong> Develop skills to strengthen LLMs in healthcare applications through reliable explanations.</li>
+                        <li><strong>Personalize responses:</strong> Explore methods for tailoring LLM outputs using domain-specific knowledge.</li>
+                        <li><strong>Ensure accountability:</strong> Assess outputs with a focus on provenance, reasoning, and transparency.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="topics">
-            <h2>Topics Covered</h2>
-            <p>Content coming soon...</p>
-        </section>
+        <hr>
 
         <section id="schedule">
             <h2>Schedule</h2>
-            <p>Content coming soon...</p>
+            <p><strong>9:00 AM - 9:30 AM:</strong> Introduction to Neurosymbolic AI and Knowledge-infused Learning by Manas Gaur.</p>
+            <p><strong>9:30 AM - 10:15 AM:</strong> Vector Symbolic Architectures by Edward Raff.</p>
+            <p><strong>10:15 AM - 10:45 AM:</strong> Knowledge-infused Learning for Explainability and Instructibility by SeyedAli Mohammadi.</p>
+            <p><strong>10:45 AM - 11:30 AM:</strong> Grounding Blackbox Language Models with RAG by Deepa Tilwani.</p>
+            <p><strong>11:30 AM - 12:00 PM:</strong> Building Explainable and Personalized Conversational Agents by Deepa Tilwani and SeyedAli Mohammadi.</p>
         </section>
+
+        <hr>
 
         <section id="team">
-            <h2>Meet the Team</h2>
-            <p>Content coming soon...</p>
+            <h2>Tutorial Organizers/Presenters</h2>
+
+            <div class="team-member">
+                <img src="Deepa.png" alt="Deepa" >
+                <div>
+                    <h3>Deepa Tilwani</h3>
+                    <p>Deepa Tilwani is an AI researcher at the University of South Carolina, with a focus on conversational AI and personalized systems. She has worked on grounding language models with real-world data.</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="Ali.png" alt="Ali">
+                <div>
+                    <h3>SeyedAli Mohammadi</h3>
+                    <p>Ali Mohammadi is currently pursuing a Ph.D. at the University of Maryland, Baltimore County (UMBC), focusing on Safety-enabled Learning, Explainable Artificial Intelligence, Natural Language Processing, and Knowledge Graphs. He is actively engaged in research at the Knowledge-Inference and Knowledge-infused AI Inference Lab, under the guidance of Dr. Manas Gaur and Dr. Frank Ferraro. Prior to his doctoral studies, Ali served as a lecturer, imparting knowledge in courses such as Image Processing, Artificial Intelligence, and Data Structures. He holds a master's in Artificial Intelligence, further enriching his academic journey. <a href="https://mohammadi-ali.github.io/">mohammadi-ali.github.io</a></p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="Edward.png" alt="Edward">
+                <div>
+                    <h3>Edward Raff</h3>
+                    <p>Edward Raff is the Director of Emerging AI at Booz Allen Hamilton and a visiting professor at the Univerity of Maryland, Baltimore County. Dr. Raff’s research toward solving client problems covers topics in Cyber Security, Reproducibility, Adversarial Machine Learning, High-Performance Computing, and Neuro-Symbolic methods. As such, he has been elected as a senior member of AAAI and the IEEE, published two books, 130+ papers, 6 best-paper awards, and 10+ patents. He has co-chaired the Conference on Applied Machine Learning for Information Security (CAMLIS) three times and co-chaired the AAAI workshop on Cyber Security (AICS) three times, was reproducibility chair of AAAI and a senior program member of multiple AI/ML conferences. </p>
+                </div>
+            </div> 
+
+            <div class="team-member">
+                <img src="Iman.png" alt="Aman">
+                <div>
+                    <h3>Iman Azimi</h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="Aman.png" alt="Aman">
+                <div>
+                    <h3>Aman Chadha</h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="Manas.png" alt="Manas">
+                <div>
+                    <h3>Manas Gaur</h3>
+                    <p>Manas Gaur is an assistant professor in the Department of Computer Science and Electrical Engineering at the University of Maryland Baltimore County. He leads the Knowledge-infused AI Inference Lab focusing on NeuroSymbolic AI, Explainable AI,  Safe AI, Knowledge-infused Learning, Large Language Models, and Knowledge Graphs, with applications to mental health, cybersecurity, crisis informatics, and conversational systems. Previously he was a senior research scientist at Samsung Research America and a visiting researcher at Alan Turing Institute UK. He was an AI for Social Good Fellow at Dataminr Inc. and Eric Wendy Schmidt Data Science for Social Good Fellow at the University of Chicago. His research has received the best paper award in IEEE Internet Computing, IEEE Intelligent Systems and an honorable mention award at ACM CoDS COMAD.  He was selected for AAAI New Faculty Highlights, and USC was awarded the Eminent Doctoral Profile award. He has been a guest editor on NeuroSymbolic AI and Large Language Models in IEEE Internet Computing and ACM Transactions on Computing for Health. He holds senior PC member or area chair for WWW, KDD, CIKM, AAAI, and ACL.  He is Co-Chair of the International Semantic Web Conference. He has organized the first Tutorial on Knowledge-infused Learning (AAAI, ACM Hypertext, and Social Computing), Explainable AI using Knowledge Graphs (AI-ML Systems, KDD).</p>
+                </div>
+            </div>
+            
+
+
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Content coming soon...</p>
+        <hr>
+
+        <section id="audience">
+            <h2>Tutorial Audience</h2>
+            <h3>Who is the target audience?</h3>
+            <p>This tutorial is designed to appeal to a broad audience, from graduate students seeking a foundational understanding of Neurosymbolic AI to industry professionals exploring its practical applications. Graduate students will benefit from a comprehensive introduction to the field, while faculty members can delve into cutting-edge research on knowledge graph-driven generative AI, particularly in healthcare. Industry researchers will gain valuable insights into grounding, instructability, and explainability in agents, and a hands-on demonstration will showcase how to integrate Neurosymbolic AI into real-world scenarios.</p>
+            <h3>What will the audience walk away with?</h3>
+            <p>
+                While grounding in AI is often associated with multimodality, it encompasses a broader concept 
+                <a href="#ref-1">[1]</a>. Grounding refers to ensuring that an AI system's understanding is firmly rooted in domain-specific knowledge, guidelines, and expertise 
+                <a href="#ref-2">[2]</a>. This is crucial for preventing superficial responses that often plague current LLMs 
+                <a href="#ref-3">[3]</a>. By delving into the techniques and strategies for achieving stronger grounding, participants will learn how to: 
+                <ul>
+                    <li>
+                        Anchor AI models in factual information through guidelines, graphs, and domain knowledge bases 
+                        <a href="#ref-4">[4]</a>
+                    </li>
+                    <li>
+                        Align AI responses with specific contexts and not provide an inconsistent and biased response
+                    </li>
+                    <li>
+                        Mitigate the risk of AI generating inaccurate or misleading information through attribution
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="slides">
+            <h2>Slides</h2>
+            <p>The slides for this tutorial will be made available closer to the event date. Stay tuned for updates.</p>
+        </section>
+
+        <hr>
+
+        <section id="references">
+            <h2>References</h2>
+            <ol>
+                <li id="ref-1">Antonio Nucci. LLM Grounding: Techniques to Amplify AI Model Accuracy --- aisera.com. aisera.com/blog/llm-grounding, [Accessed 17-01-2025]</li>
+                <li id="ref-2">Bajaj G, Shalin VL, Parthasarathy S, Sheth A. Grounding From an AI and Cognitive Science Lens. IEEE Intelligent Systems. 2024 Apr 30;39(2):66-71.</li>
+                <li id="ref-3">Biderman S, Prashanth U, Sutawika L, Schoelkopf H, Anthony Q, Purohit S, Raff E. Emergent and predictable memorization in large language models. Advances in Neural Information Processing Systems. 2024 Feb 13;36.</li>
+                <li id="ref-4">Grounding in Large Language Models (LLMs) and AI | Generative AI Wiki --- attri.ai. https://attri.ai/generative-ai-wiki/grounding-in-large-language-models-llms-and-ai, [Accessed 17-01-2025]</li>
+            </ol>
         </section>
     </div>
 
