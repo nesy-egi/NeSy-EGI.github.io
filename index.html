@@ -21,7 +21,7 @@
             text-align: center;
             padding: 1rem 0;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -80,16 +80,23 @@
             margin-bottom: 1rem;
             border-bottom: 3px solid #3f51b5;
             padding-bottom: 0.5rem;
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         section h3 {
             color: #303f9f;
             margin-bottom: 1rem;
+            font-size: 1.8rem;
         }
-
+        section p {
+        font-family: 'Roboto', Arial, sans-serif; /* Update font family if needed */
+        font-size: 1.4rem; /* Adjust size (e.g., 0.9rem for smaller, 1.1rem for larger) */
+        line-height: 1.8; /* Fine-tune line spacing */
+        color: #444; /* Optional: Darker gray for better contrast */
+    }
         section p, ul {
             margin-top: 1rem;
+            font-size: 1.4rem;
         }
 
         ul {
@@ -164,7 +171,7 @@
         }
 
         .slide {
-            flex: 0 0 200px; /* Set a fixed width for each slide */
+            flex: 0 0 350px; /* Set a fixed width for each slide */
             height: 300px; /* Set a fixed height for each slide */
             text-align: center;
             background: #f9f9f9;
@@ -186,7 +193,7 @@
         }
 
         .slide h3 {
-            font-size: 1rem;
+            font-size: 1.4rem;
             margin: 0.5rem 0;
             color: #333;
         }
@@ -342,69 +349,25 @@
         </section>
         
         
-
-        <!-- <section id="team">
-            <h2>Tutorial Organizers/Presenters</h2>
-
-            <div class="team-member">
-                <img src="members/Deepa.png" alt="Deepa" >
-                <div>
-                    <h3>Deepa Tilwani</h3>
-                    <p>Deepa Tilwani is a PhD candidate in Computer Science at the Artificial Intelligence Institute, University of South Carolina, where she specializes in advancing Large Language Models, Artificial Intelligence, and Neurosymbolic AI. Her research lies at the intersection of AI and neuroscience, leveraging cutting-edge natural language processing, signal processing, and biosignal analysis to develop transformative solutions for complex neuroscience challenges. Recognized with prestigious awards and featured in leading publications, her work reflects significant impact and innovation in health care. Driven by a passion for discovery, she actively seeks opportunities to collaborate and contribute to groundbreaking advancements in this rapidly evolving field.</p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="members/Ali.png" alt="Ali">
-                <div>
-                    <h3>Ali (SeyedAli) Mohammadi</h3>
-                    <p>Ali Mohammadi is currently pursuing a Ph.D. at the University of Maryland, Baltimore County (UMBC), focusing on Safety-enabled Learning, Explainable Artificial Intelligence, Natural Language Processing, and Knowledge Graphs. He is actively engaged in research at the Knowledge-Inference and Knowledge-infused AI Inference Lab, under the guidance of Dr. Manas Gaur and Dr. Frank Ferraro. Prior to his doctoral studies, Ali served as a lecturer, imparting knowledge in courses such as Image Processing, Artificial Intelligence, and Data Structures. He holds a master's in Artificial Intelligence, further enriching his academic journey. <a href="https://mohammadi-ali.github.io/">mohammadi-ali.github.io</a></p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="members/Edward.png" alt="Edward">
-                <div>
-                    <h3>Edward Raff</h3>
-                    <p>Edward Raff is the Director of Emerging AI at Booz Allen Hamilton and a visiting professor at the Univerity of Maryland, Baltimore County. Dr. Raff’s research toward solving client problems covers topics in Cyber Security, Reproducibility, Adversarial Machine Learning, High-Performance Computing, and Neuro-Symbolic methods. As such, he has been elected as a senior member of AAAI and the IEEE, published two books, 130+ papers, 6 best-paper awards, and 10+ patents. He has co-chaired the Conference on Applied Machine Learning for Information Security (CAMLIS) three times and co-chaired the AAAI workshop on Cyber Security (AICS) three times, was reproducibility chair of AAAI and a senior program member of multiple AI/ML conferences. </p>
-                </div>
-            </div> 
-
-            <div class="team-member">
-                <img src="members/Iman.png" alt="Aman">
-                <div>
-                    <h3>Iman Azimi</h3>
-                    <p>Iman Azimi is the assistant director at the UC Irvine - Institute for Future Health and an adjunct professor at the University of Turku. Iman holds a Ph.D. in Information and Communication Technology from the University of Turku and an MSc in Artificial Intelligence and Robotics from Sapienza University of Rome. His research spans machine learning, generative AI, and health data analysis. He works on multiple digital health projects, focusing on conversational health agents, mental health, maternal health and nutrition monitoring, and personalized data analytics utilizing AI techniques on diverse data sources, such as wearable devices.</p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="members/Aman.png" alt="Aman">
-                <div>
-                    <h3>Aman Chadha</h3>
-                    <p>Aman Chadha leads a team of Generative AI Scientists and Managers at AWS. Previously, he spearheaded Speaker Understanding & Personalization efforts at Amazon Alexa AI. Prior to Amazon, Aman was a key contributor to the Machine Intelligence Neural Design (MIND) team at Apple, where he trained on-device multimodal AI models for applications spanning Natural Language Processing, Computer Vision, and Speech Recognition. As one of the architects behind Apple's M1 chip, he developed machine learning models to predict the performance of future Macs years in advance. Before Apple, Aman honed his expertise in ML accelerators and GPUs during his tenure at Qualcomm and Nvidia. Aman specialized in Multimodal AI at Stanford University. He holds a Master’s in Computer Engineering from the University of Wisconsin-Madison, where he received the Outstanding Graduate Student Award, and a Bachelor’s in Electronics and Telecommunication Engineering with distinction from the University of Mumbai. He has published in leading conferences, such as ACL, EMNLP (Outstanding Paper Award '23), AAAI, EACL, ECIR, ECML, WSDM, WACV, ICASSP, etc. His work has been featured in outlets like The Washington Post, New Scientist, Analytics India Magazine, etc. </p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="members/Manas.png" alt="Manas">
-                <div>
-                    <h3>Manas Gaur</h3>
-                    <p>Manas Gaur is an assistant professor in the Department of Computer Science and Electrical Engineering at the University of Maryland Baltimore County. He leads the Knowledge-infused AI Inference Lab focusing on NeuroSymbolic AI, Explainable AI,  Safe AI, Knowledge-infused Learning, Large Language Models, and Knowledge Graphs, with applications to mental health, cybersecurity, crisis informatics, and conversational systems. Previously he was a senior research scientist at Samsung Research America and a visiting researcher at Alan Turing Institute UK. He was an AI for Social Good Fellow at Dataminr Inc. and Eric Wendy Schmidt Data Science for Social Good Fellow at the University of Chicago. His research has received the best paper award in IEEE Internet Computing, IEEE Intelligent Systems and an honorable mention award at ACM CoDS COMAD.  He was selected for AAAI New Faculty Highlights, and USC was awarded the Eminent Doctoral Profile award. He has been a guest editor on NeuroSymbolic AI and Large Language Models in IEEE Internet Computing and ACM Transactions on Computing for Health. He holds senior PC member or area chair for WWW, KDD, CIKM, AAAI, and ACL.  He is Co-Chair of the International Semantic Web Conference. He has organized the first Tutorial on Knowledge-infused Learning (AAAI, ACM Hypertext, and Social Computing), Explainable AI using Knowledge Graphs (AI-ML Systems, KDD).</p>
-                </div>
-            </div>
-            
-
-
-        </section> -->
-
         <hr>
 
         <section id="audience">
             <h2>Tutorial Audience</h2>
-            <h3>Who is the target audience?</h3>
             <p>This tutorial is designed to appeal to a broad audience, from graduate students seeking a foundational understanding of Neurosymbolic AI to industry professionals exploring its practical applications. Graduate students will benefit from a comprehensive introduction to the field, while faculty members can delve into cutting-edge research on knowledge graph-driven generative AI, particularly in healthcare. Industry researchers will gain valuable insights into grounding, instructability, and explainability in agents, and a hands-on demonstration will showcase how to integrate Neurosymbolic AI into real-world scenarios.</p>
-            <h3>What will the audience walk away with?</h3>
+
+            <h3>Prerequisites</h3>
+            <p>While this tutorial is designed to be accessible, a foundational understanding of the following topics is recommended to maximize comprehension and engagement:</p>
+            <ul>
+                <li><strong>Probability and Statistics:</strong> Familiarity with basic probability concepts and statistical analysis methods.</li>
+                <li><strong>Artificial Intelligence (AI):</strong> A working knowledge of AI principles, especially those related to language models and neural networks.</li>
+                <li><strong>Knowledge Graphs:</strong> Understanding the structure and application of knowledge graphs in AI systems.</li>
+                <li><strong>Machine Learning:</strong> Experience with machine learning concepts, including supervised and unsupervised learning techniques.</li>
+                <li><strong>Data Mining:</strong> Basic insights into extracting patterns and knowledge from large datasets.</li>
+            </ul>
+            <p>For those new to these areas, the tutorial will include a foundational overview and focus on providing intuitive explanations of complex concepts. Advanced topics will be presented with an emphasis on accessibility, ensuring participants of varied expertise can follow along and benefit from the session.</p>
+
+
+            <h3>Takeaways</h3>
             <p>
                 While grounding in AI is often associated with multimodality, it encompasses a broader concept 
                 <a href="#ref-1">[1]</a>. Grounding refers to ensuring that an AI system's understanding is firmly rooted in domain-specific knowledge, guidelines, and expertise 
@@ -423,6 +386,8 @@
                     </li>
                 </ul>
             </p>
+
+            
         </section>
 
         <hr>
@@ -476,6 +441,7 @@
                 <li id="ref-2">Bajaj G, Shalin VL, Parthasarathy S, Sheth A. Grounding From an AI and Cognitive Science Lens. IEEE Intelligent Systems. 2024 Apr 30;39(2):66-71.</li>
                 <li id="ref-3">Biderman S, Prashanth U, Sutawika L, Schoelkopf H, Anthony Q, Purohit S, Raff E. Emergent and predictable memorization in large language models. Advances in Neural Information Processing Systems. 2024 Feb 13;36.</li>
                 <li id="ref-4">Grounding in Large Language Models (LLMs) and AI | Generative AI Wiki --- attri.ai. https://attri.ai/generative-ai-wiki/grounding-in-large-language-models-llms-and-ai, [Accessed 17-01-2025]</li>
+
             </ol>
         </section>
     </div>
